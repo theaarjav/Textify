@@ -6,7 +6,7 @@ export default function Navbar(props) {
     return (
             <nav className={`navbar navbar-expand-lg navbar-${props.mode === 'light' ? 'dark' : 'light'} bg-${props.mode === 'light' ? 'dark' : 'light'}`}>
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/">{props.title}</NavLink>
+                    <NavLink className="navbar-brand" to="/Textify">{props.title}</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
