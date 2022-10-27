@@ -76,7 +76,7 @@ export default function Textcomp(props) {
                     <label htmlFor="exampleFormControlTextarea1" className="form-label" style={{
                         // textAlign: "center"
                     }}>Textify your content in your way</label>
-                    <textarea placeholder='Enter Your Text Here' value={text} onChange={onChangeHandler} className={`form-control bg-${props.mode === 'light' ? 'white' : 'black'} text-${props.mode === 'light' ? 'black' : 'white'}`} id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <textarea placeholder='Enter Your Text Here' value={text} onChange={onChangeHandler} className={`form-control bg-${props.mode === 'light' ? 'light' : 'dark'} text-${props.mode === 'light' ? 'black' : 'white'}`} id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <button disabled={text.split(" ").filter((e)=>{return e.length!==0}).length===0} className={`btn ${props.mode === 'light' ? 'btn-primary' : 'btn-outline-primary'} text-light btn-sm mx-3 my-2`} onClick={upperClick}>Convert to Upper Case</button>
                 <button disabled={text.split(" ").filter((e)=>{return e.length!==0}).length===0} className={`btn ${props.mode === 'light' ? 'btn-primary' : 'btn-outline-primary'} text-light btn-sm mx-3 my-2`} onClick={lowerClick}>Convert to Lower Case</button>
