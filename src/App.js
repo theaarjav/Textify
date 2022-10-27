@@ -41,7 +41,7 @@ function App() {
           <Route exact path="/about">
             <About mode={mode}/>
           </Route>
-          <Route exact path="/">
+          <Route exact path="/Textify">
           <Textcomp showAlert={showAlert} mode={mode} />
           </Route>
         </Switch>
